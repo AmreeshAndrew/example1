@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EmployeeController {
 @Autowired
 EmployeeService es;
-@PostMapping(value="/details")
+@PostMapping(value="/detail")
 public String postDetail(@RequestBody List<Employee>emps){
 	return es.postDetail(emps);
 }
